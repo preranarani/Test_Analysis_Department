@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+<!-- JAVASCRIPT STARTS -->
+
+<!-- initialising javascript array -->
+var data = [0, 1, 2, 'stop', 2, 0, 1, 'stop'];
+
+<!-- print the new array in HTML, call the function -->
+document.getElementById("demo").innerHTML = zeroRemoved(data) ;
+
+<!-- create function for rremoving the zero -->
+function zeroRemoved(data){
+var newData=[];
+var j=0;
+for (var i=0;i<data.length;i++){
+	if(data[i]!==0){
+		newData[j]=data[i];
+		j++;
+	}
+}
+return newData;
+}
+
+<!-- JAVASCRIPT ENDS -->
+</script>
+</head>
+
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>A new array with zeros removed</p>
+
+<p id="demo"></p>
+</body>
+
+
+</html>
